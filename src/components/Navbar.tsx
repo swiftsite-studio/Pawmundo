@@ -57,26 +57,28 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden pb-6">
+        <div className={`md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg border-t border-gray-100 transition-all duration-300 ease-in-out ${
+          isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
+        }`}>
+          <div className="px-4 py-6">
             <div className="flex flex-col space-y-2">
-              {navItems.map((item) => (
+              {navItems.map((item, index) => (
                 <Link
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 ${
+                  className={`mobile-nav-item px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 ${
                     location.pathname === item.path
                       ? 'bg-teal-500 text-white'
                       : 'text-gray-700 hover:text-teal-600 hover:bg-teal-50'
-                  }`}
+                  } ${isOpen ? 'animate-in' : ''}`}
                 >
                   {item.label}
                 </Link>
               ))}
             </div>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   );
