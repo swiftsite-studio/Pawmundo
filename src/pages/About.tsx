@@ -29,7 +29,7 @@ const About = () => {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center hero-content">
-            <h1 className="text-5xl font-bold mb-6">About PawMundo</h1>
+            <h1 className="text-5xl font-bold mb-6">About PawPals</h1>
             <p className="text-xl text-pink-100 max-w-3xl mx-auto">
               Where every tail wag matters and every pet is family
             </p>
@@ -45,7 +45,7 @@ const About = () => {
               <h2 className="text-4xl font-bold text-gray-800">Our Story</h2>
               <div className="space-y-4 text-gray-600 text-lg">
                 <p>
-                  Founded in 2019 by a team of passionate pet lovers, PawMundo started with a simple mission: 
+                  Founded in 2019 by a team of passionate pet lovers, PawPals started with a simple mission: 
                   to provide the best possible care for every pet that walks through our doors.
                 </p>
                 <p>

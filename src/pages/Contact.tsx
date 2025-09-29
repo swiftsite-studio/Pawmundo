@@ -308,7 +308,7 @@ const Contact = () => {
               </div>
 
               <div className="bg-gradient-to-r from-pink-100 to-yellow-100 rounded-2xl p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Why Choose PawMundo?</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Why Choose PawPals?</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li>• Experienced, certified professionals</li>
                   <li>• Safe, clean, and comfortable environment</li>
