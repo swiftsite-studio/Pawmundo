@@ -54,7 +54,7 @@ const Services = () => {
       name: 'Sarah Miller',
       pet: 'Golden Retriever - Max',
       rating: 5,
-      text: 'PawPals transformed Max from a anxious pup to a confident, well-behaved dog. Their training program is amazing!',
+      text: 'PawMundo transformed Max from a anxious pup to a confident, well-behaved dog. Their training program is amazing!',
       image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
@@ -68,7 +68,7 @@ const Services = () => {
       name: 'Maria Garcia',
       pet: 'Beagle - Buddy',
       rating: 5,
-      text: 'When we travel, we never worry about Buddy because we know he\'s in the best hands at PawPals boarding facility.',
+      text: 'When we travel, we never worry about Buddy because we know he\'s in the best hands at PawMundo boarding facility.',
       image: 'https://images.pexels.com/photos/1346086/pexels-photo-1346086.jpeg?auto=compress&cs=tinysrgb&w=400'
     }
   ];
