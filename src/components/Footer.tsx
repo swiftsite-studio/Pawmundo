@@ -37,6 +37,7 @@ const Footer = () => {
                 <div className="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full"></div>
               </div>
               <span className="text-2xl font-bold">PawPals</span>
+              <span className="text-2xl font-bold">PawMundo</span>
             </Link>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Your trusted partner in pet care. We treat every pet like family and provide 
@@ -118,7 +119,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 PawPals Pet Services. All rights reserved. Made with ❤️ for pets and their families.
+              © 2024 PawMundo Pet Services. All rights reserved. Made with ❤️ for pets and their families.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors duration-200">
