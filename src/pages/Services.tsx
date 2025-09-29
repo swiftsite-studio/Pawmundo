@@ -1,4 +1,3 @@
-import React from 'react';
 import React, { useEffect } from 'react';
 import { Scissors, GraduationCap, Home as HomeIcon, Stethoscope, Star, Check } from 'lucide-react';
 
