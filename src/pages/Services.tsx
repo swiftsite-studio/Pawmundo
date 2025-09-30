@@ -148,7 +148,6 @@ const Services = () => {
       {/* Services Grid */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 animate-stagger">
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 animate-stagger">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
@@ -183,7 +182,6 @@ const Services = () => {
                 </div>
               </div>
             ))}
-          </div>
           </div>
         </div>
       </section>
