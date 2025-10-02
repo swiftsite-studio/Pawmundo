@@ -410,11 +410,13 @@ const Home = () => {
       </section>
 
       {/* Book Service Section */}
-      <section className="py-20 bg-gradient-to-br from-teal-50 via-blue-50 to-purple-50 relative overflow-hidden">
+      <ScrollAnimation>
+        <section className="py-20 bg-gradient-to-br from-teal-50 via-blue-50 to-purple-50 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Booking Form */}
-            <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-10">
+            <ScrollAnimation animationType="slideLeft">
+              <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-10">
               <div className="text-center mb-8">
                 <div className="inline-flex items-center bg-gradient-to-r from-pink-100 to-purple-100 px-4 py-2 rounded-full mb-4">
                   <MessageCircle className="h-5 w-5 text-pink-600 mr-2" />
@@ -572,10 +574,12 @@ const Home = () => {
                   </button>
                 </div>
               </form>
-            </div>
+              </div>
+            </ScrollAnimation>
 
             {/* Happy Pets Images */}
-            <div className="space-y-8">
+            <ScrollAnimation animationType="slideRight">
+              <div className="space-y-8">
               <div>
                 <h3 className="text-3xl font-bold text-gray-800 mb-6">Your Pets Will Love Us!</h3>
                 <p className="text-lg text-gray-600 mb-8">
@@ -663,10 +667,12 @@ const Home = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
-      </section>
+        </section>
+      </ScrollAnimation>
     </div>
   );
 };
