@@ -327,8 +327,7 @@ const Contact = () => {
               </div>
           </div>
         </div>
-        </section>
-      </ScrollAnimation>
+      </section>
     </div>
   );
 };
