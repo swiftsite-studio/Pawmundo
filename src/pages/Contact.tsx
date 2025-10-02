@@ -307,14 +307,7 @@ const Contact = () => {
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-                    <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">Pampered & Loved!</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </div>
-            </ScrollAnimation>
+
               <div className="bg-gradient-to-r from-pink-100 to-yellow-100 rounded-2xl p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">Why Choose PawPals?</h3>
                 <ul className="space-y-2 text-gray-600">
@@ -325,6 +318,16 @@ const Contact = () => {
                   <li>• Affordable prices with no hidden fees</li>
                 </ul>
               </div>
+            </div>
+            </ScrollAnimation>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Contact;
           </div>
         </div>
       </section>
