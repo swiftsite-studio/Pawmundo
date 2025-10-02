@@ -325,8 +325,6 @@ const Contact = () => {
                   <li>• Affordable prices with no hidden fees</li>
                 </ul>
               </div>
-              </div>
-            </ScrollAnimation>
           </div>
         </div>
         </section>
@@ -336,5 +334,3 @@ const Contact = () => {
 };
 
 export default Contact;
-            <ScrollAnimation animationType="slideRight">
-              <div className="space-y-8">
