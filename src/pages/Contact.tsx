@@ -246,9 +246,12 @@ const Contact = () => {
                 </button>
               </div>
             </div>
+            </ScrollAnimation>
+            </div>
 
             {/* Happy Pets Images */}
-            <div className="space-y-8">
+            <ScrollAnimation animationType="slideRight">
+              <div className="space-y-8">
               <div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Your Pets Will Love Us!</h2>
                 <p className="text-lg text-gray-600 mb-8">
