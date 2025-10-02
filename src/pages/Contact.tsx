@@ -82,9 +82,11 @@ const Contact = () => {
       </section>
 
       {/* Contact Info */}
-      <section className="py-20 bg-white">
+      <ScrollAnimation>
+        <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-6 mb-16 animate-stagger">
+          <ScrollAnimation animationType="stagger">
+            <div className="grid md:grid-cols-4 gap-6 mb-16">
             {contactInfo.map((info, index) => (
               <div key={index} className="text-center">
                 <div className={`w-16 h-16 ${info.color} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
@@ -94,11 +96,13 @@ const Contact = () => {
                 <p className="text-gray-600">{info.info}</p>
               </div>
             ))}
-          </div>
+            </div>
+          </ScrollAnimation>
 
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Booking Form */}
-            <div className="bg-gradient-to-br from-teal-50 to-blue-50 rounded-2xl p-8">
+            <ScrollAnimation animationType="slideLeft">
+              <div className="bg-gradient-to-br from-teal-50 to-blue-50 rounded-2xl p-8">
               <h2 className="text-3xl font-bold text-gray-800 mb-8">Book a Service</h2>
               
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -306,7 +310,8 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-
+              </div>
+            </ScrollAnimation>
               <div className="bg-gradient-to-r from-pink-100 to-yellow-100 rounded-2xl p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">Why Choose PawPals?</h3>
                 <ul className="space-y-2 text-gray-600">
@@ -317,12 +322,16 @@ const Contact = () => {
                   <li>• Affordable prices with no hidden fees</li>
                 </ul>
               </div>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
-      </section>
+        </section>
+      </ScrollAnimation>
     </div>
   );
 };
 
 export default Contact;
+            <ScrollAnimation animationType="slideRight">
+              <div className="space-y-8">

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Scissors, GraduationCap, Home as HomeIcon, Stethoscope, Star, Check } from 'lucide-react';
+import ScrollAnimation from '../components/ScrollAnimation';
 
 const Services = () => {
   useEffect(() => {
@@ -223,14 +224,18 @@ const Services = () => {
       </section>
 
       {/* Pricing Table */}
-      <section className="py-20 bg-white">
+      <ScrollAnimation>
+        <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <ScrollAnimation animationType="fade">
+            <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-6">Care Packages</h2>
             <p className="text-xl text-gray-600">Choose the perfect plan for your pet's needs</p>
-          </div>
+            </div>
+          </ScrollAnimation>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <ScrollAnimation animationType="stagger">
+            <div className="grid md:grid-cols-3 gap-8">
             {pricingPlans.map((plan, index) => (
               <div key={index} className={`bg-white rounded-2xl shadow-lg border-2 ${plan.color} p-8 relative`}>
                 {plan.popular && (
@@ -263,9 +268,11 @@ const Services = () => {
                 </button>
               </div>
             ))}
-          </div>
+            </div>
+          </ScrollAnimation>
         </div>
-      </section>
+        </section>
+      </ScrollAnimation>
     </div>
   );
 };

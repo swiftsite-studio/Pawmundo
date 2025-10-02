@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Heart, Award, Users, Clock } from 'lucide-react';
+import ScrollAnimation from '../components/ScrollAnimation';
 
 const About = () => {
   useEffect(() => {
@@ -38,10 +39,12 @@ const About = () => {
       </section>
 
       {/* Our Story */}
-      <section className="py-20 bg-white relative">
+      <ScrollAnimation>
+        <section className="py-20 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-6">
+            <ScrollAnimation animationType="slideLeft">
+              <div className="space-y-6">
               <h2 className="text-4xl font-bold text-gray-800">Our Story</h2>
               <div className="space-y-4 text-gray-600 text-lg">
                 <p>
@@ -57,9 +60,11 @@ const About = () => {
                   every service we provide. Your pet's happiness and well-being is our top priority.
                 </p>
               </div>
-            </div>
+              </div>
+            </ScrollAnimation>
 
-            <div className="relative">
+            <ScrollAnimation animationType="slideRight">
+              <div className="relative">
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <img 
                   src="https://images.pexels.com/photos/4587998/pexels-photo-4587998.jpeg?auto=compress&cs=tinysrgb&w=800" 
@@ -72,19 +77,25 @@ const About = () => {
               <div className="absolute -top-6 -right-6 bg-pink-500 text-white p-4 rounded-full shadow-lg animate-pulse">
                 <Heart className="h-8 w-8 fill-current" />
               </div>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
-      </section>
+        </section>
+      </ScrollAnimation>
 
       {/* Mission & Values */}
-      <section className="py-20 bg-gradient-to-r from-teal-50 to-blue-50">
+      <ScrollAnimation>
+        <section className="py-20 bg-gradient-to-r from-teal-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <ScrollAnimation animationType="fade">
+            <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Mission & Values</h2>
-          </div>
+            </div>
+          </ScrollAnimation>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <ScrollAnimation animationType="stagger">
+            <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="flex items-center mb-6">
                 <div className="bg-teal-100 text-teal-600 p-3 rounded-full mr-4">
@@ -112,19 +123,25 @@ const About = () => {
                 <li>• Continuous learning and improvement</li>
               </ul>
             </div>
-          </div>
+            </div>
+          </ScrollAnimation>
         </div>
-      </section>
+        </section>
+      </ScrollAnimation>
 
       {/* Stats Section */}
-      <section className="py-20 bg-white">
+      <ScrollAnimation>
+        <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <ScrollAnimation animationType="fade">
+            <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-6">By the Numbers</h2>
             <p className="text-xl text-gray-600">Our commitment to excellence speaks for itself</p>
-          </div>
+            </div>
+          </ScrollAnimation>
 
-          <div className="grid md:grid-cols-4 gap-8 animate-stagger">
+          <ScrollAnimation animationType="stagger">
+            <div className="grid md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center group">
                 <div className="bg-gradient-to-r from-teal-400 to-blue-500 text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -134,19 +151,25 @@ const About = () => {
                 <div className="text-gray-600">{stat.label}</div>
               </div>
             ))}
-          </div>
+            </div>
+          </ScrollAnimation>
         </div>
-      </section>
+        </section>
+      </ScrollAnimation>
 
       {/* Team Section */}
-      <section className="py-20 bg-gradient-to-r from-yellow-50 to-pink-50">
+      <ScrollAnimation>
+        <section className="py-20 bg-gradient-to-r from-yellow-50 to-pink-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <ScrollAnimation animationType="fade">
+            <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-6">Meet Our Team</h2>
             <p className="text-xl text-gray-600">Passionate professionals dedicated to your pet's well-being</p>
-          </div>
+            </div>
+          </ScrollAnimation>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <ScrollAnimation animationType="stagger">
+            <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
               <img 
                 src="https://images.pexels.com/photos/5731846/pexels-photo-5731846.jpeg?auto=compress&cs=tinysrgb&w=400" 
@@ -179,9 +202,11 @@ const About = () => {
               <p className="text-orange-600 font-medium mb-3">Pet Behavior Specialist</p>
               <p className="text-gray-600">Expert in positive reinforcement training techniques</p>
             </div>
-          </div>
+            </div>
+          </ScrollAnimation>
         </div>
-      </section>
+        </section>
+      </ScrollAnimation>
     </div>
   );
 };

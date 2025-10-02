@@ -152,14 +152,18 @@ const Home = () => {
       </section>
 
       {/* Services Highlights */}
-      <section className="py-20 bg-white relative">
+      <ScrollAnimation>
+        <section className="py-20 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <ScrollAnimation animationType="fade">
+            <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Pet Services</h2>
             <p className="text-xl text-gray-600">Everything your furry friend needs, all in one place</p>
-          </div>
+            </div>
+          </ScrollAnimation>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <ScrollAnimation animationType="stagger">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div 
                 key={index} 
@@ -172,7 +176,8 @@ const Home = () => {
                 <p className="text-gray-600 text-center">{service.description}</p>
               </div>
             ))}
-          </div>
+            </div>
+          </ScrollAnimation>
 
           <div className="text-center mt-12">
             <Link 
@@ -184,7 +189,8 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </section>
+        </section>
+      </ScrollAnimation>
 
       {/* Happy Pets Section */}
       <section className="py-20 bg-gradient-to-r from-pink-50 to-yellow-50">
