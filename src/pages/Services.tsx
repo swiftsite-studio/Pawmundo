@@ -1,11 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Scissors, GraduationCap, Home as HomeIcon, Stethoscope, Star, Check } from 'lucide-react';
 import ScrollAnimation from '../components/ScrollAnimation';
 
 const Services = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const services = [
     {

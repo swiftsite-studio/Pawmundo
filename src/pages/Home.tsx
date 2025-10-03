@@ -1,12 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ArrowRight, Scissors, GraduationCap, Home as HomeIcon, Stethoscope, Heart, Award, Users, Clock, Star, Check, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ScrollAnimation from '../components/ScrollAnimation';
 
 const Home = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const [formData, setFormData] = React.useState({
     name: '',

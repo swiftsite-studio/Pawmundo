@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 import ScrollAnimation from '../components/ScrollAnimation';
 
 const Contact = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const [formData, setFormData] = useState({
     name: '',

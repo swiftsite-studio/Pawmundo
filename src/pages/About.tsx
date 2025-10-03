@@ -1,11 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Heart, Award, Users, Clock } from 'lucide-react';
 import ScrollAnimation from '../components/ScrollAnimation';
 
 const About = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const stats = [
     { icon: Heart, value: '1000+', label: 'Happy Pets' },
