@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { ArrowRight, Scissors, GraduationCap, Home as HomeIcon, Stethoscope, Heart, Award, Users, Clock, Star, Check, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import ScrollAnimation from '../components/ScrollAnimation';
 
 const Home = () => {
   useEffect(() => {
