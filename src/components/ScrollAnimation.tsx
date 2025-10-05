@@ -23,8 +23,6 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
             setTimeout(() => {
               entry.target.classList.add('animate-in');
             }, delay);
-          } else {
-            entry.target.classList.remove('animate-in');
           }
         });
       },
